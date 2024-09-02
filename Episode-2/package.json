@@ -1,0 +1,32 @@
+{
+  "name": "episode-2",
+  "version": "1.0.0",
+  "description": "This is react course",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/akhilavarghese245/study-react.git)"
+  },
+  "keywords": [
+    "react",
+    "study-reat"
+  ],
+  "author": "Akhila",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
+  },
+
+  "browsersList": [
+    "last 2 versions"
+  ]
+
+  
+}
