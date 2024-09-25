@@ -24,14 +24,15 @@ const Header = () => {
 
 
 // restaurant cards
-const RestCard = () => {
+const RestCard = (props) => {
+    const { resName, cuisine, rating, time } = props;
     return (
         <div className="res-card">
             <img  className="res-logo" alt = "res-logo" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/r5mfli8wbcxukj0ehbit"/>
-            <h4>Hotel Mithila</h4>
-            <h6>North indian, Chinese</h6>
-            <h6>4.5 stars</h6>
-            <h6>35-40 mins</h6>
+            <h4>{resName}</h4>
+            <h6>{cuisine}</h6>
+            <h6>{rating} stars</h6>
+            <h6>{time} mins</h6>
         </div>
     );
 };
@@ -43,8 +44,19 @@ const Body = () => {
                 <h3>Search</h3>
             </div>
             <div className="res-container">
-                <RestCard />
-                <RestCard />
+                <RestCard 
+                    resName = "Hotel Mithila" 
+                    cuisine="North Indian" 
+                    rating = "4.5"
+                    time="30-45"
+                />
+                <RestCard 
+                    resName = "KFC" 
+                    cuisine="Chinese" 
+                    rating = "4.5"
+                    time="30-45"
+                
+                />
             </div>
         </div>
     );
